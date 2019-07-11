@@ -1,0 +1,5 @@
+* Download Frobtads repo
+git clone https://github.com/realnc/frobtads.git
+** INSTALL FILE IN ./doc/install
+* install t3sketch
+

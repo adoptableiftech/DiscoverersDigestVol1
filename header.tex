@@ -1,0 +1,232 @@
+%Phone 
+%open chapters on any page, final removes formatting marks
+\documentclass[10pt,openany,final]{memoir}
+\title{Thoughts About IF}
+%place graphics package first to avoid conflicts (weird page sizes)
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+
+%\usepackage[paperwidth=70.9mm, paperheight=143.6mm, hmargin={1cm, 1cm},vmargin={1.2cm, 1.25cm}]{geometry}
+% New setup
+% setstocksize{height}{width}
+\setstocksize{216mm}{137mm}
+\settrimmedsize{216mm}{137mm}{*}
+\settypeblocksize{216mm}{137mm}{*}
+\setlrmarginsandblock{24.0mm}{24.0mm}{*}
+\setulmarginsandblock{27mm}{27mm}{*}
+% \marginparmargin{2mm}
+% memoir: finalize the page changes
+\checkandfixthelayout
+
+\usepackage{microtype}
+
+% \usepackage{marginnote}
+%\usepackage{wrapfig}
+%\setbeforesecskip{2mm}
+% \setaftersecskip{2mm}
+%\setSindent{0pt}
+
+% TYPEFACE PROPERTIES
+%--------------------
+% fontspec system for typeface definitions
+\usepackage{fontspec,xunicode,polyglossia}
+
+%NOTE: good discussion of fonts: https://tex.stackexchange.com/questions/352804/setmainfont-vs-fontspec
+%letter spacing
+
+%fontspec font selection
+\setmainfont{LinuxLibertineG}[
+BoldFont = LinuxLibertineGB,
+ItalicFont = LinuxLibertineGI,
+BoldItalicFont = LinuxLibertineGZI,
+SlantedFont = LinLibertineSlantedZ,
+BoldSlantedFont = LinLibertineSlantedZ,
+SmallCapsFont = LinLibertineCapitals
+]
+\setmonofont{LinLibertine_M}
+\setsansfont{LiberationSans}
+
+
+\makeatletter
+%\g@addto@macro\chapnamefont{\sffamily} 
+%\g@addto@macro\chapnumfont{\sffamily}  
+%\g@addto@macro\chaptitlefont{\sffamily}
+%\makeatother
+
+% PAGE PROPERTIES
+%----------------
+%% common ligatures
+%TODO: add more ligatures
+\usepackage{newunicodechar}
+\newunicodechar{ﬀ}{ff}
+\newunicodechar{ﬁ}{fi}
+\newunicodechar{ﬂ}{fl}
+\newunicodechar{ﬃ}{ffi}
+\newunicodechar{ﬄ}{ffl}
+%% end of common ligatures
+
+% CHAPTER PROPERTIES
+%-------------------
+
+% remove chapter number from the page headers
+% \addtopsmarks{headings}{}{
+%   \createmark{chapter}{left}{nonumber}{}{}
+% }
+% \pagestyle{headings} % activate changes
+
+
+%chapter page style
+\makechapterstyle{plroman}{
+\renewcommand\printchaptername{}
+\renewcommand\printchapternum{\centering\MakeUppercase
+{\fontsize{.75in}{1in}\selectfont\romannumeral\thechapter}}
+\renewcommand\afterchaptertitle{\vskip0.25\midchapskip\vskip\midchapskip
+\hrule\vskip0.15\midchapskip\vskip\midchapskip}
+}
+
+% Use this chapter style
+\chapterstyle{plroman}
+
+% Drop first letter of each chapter
+\usepackage{lettrine}
+
+% Precise colors
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+
+%flexible margin notes
+\usepackage{marginnote}
+
+% PAGE HEADER PROPERTIES
+% -----------------------
+\nouppercaseheads
+\makepagestyle{mystyle}
+\makeevenhead{mystyle}{\itshape\thetitle}{}{\scshape\MakeLowercase\rightmark}
+\makeoddhead{mystyle}{}{}{\scshape\MakeLowercase\leftmark}
+\makeevenfoot{mystyle}{}{\thepage}{}
+\makeoddfoot{mystyle}{}{\thepage}{}
+\makepsmarks{mystyle}{%
+  \createmark{chapter}{left}{nonumber}{}{}}
+
+\pagestyle{mystyle}
+
+\usepackage[absolute]{textpos}
+
+% get rid of section period in page header
+% \def\sectionmark#1{\markboth{#1}{}}
+\def\sectionmark#1{\markboth{#1}{#1}}
+
+% SECTION/SUBSECTION STYLE
+% --------------------------
+\setsecheadstyle{\color{red!70!black}\LARGE\scshape\raggedright}
+\setsubsecheadstyle{\color{red!70!black}\large\scshape\raggedright}
+\setsubsubsecheadstyle{\color{red!70!black}\normalsize\scshape\raggedright}
+\setbeforesecskip{-1.5ex plus -.5ex minus -.2ex}
+\setaftersecskip{1.3ex plus .2ex}
+\setbeforesubsecskip{-1.25ex plus -.5ex minus -.2ex}
+\setaftersubsecskip{1ex plus .2ex}
+
+% \renewcommand*{\cftchapterleader}{}
+% \renewcommand*{\cftsectionleader}{}
+%\renewcommand*{\cftsubsectionleader}{}
+% \renewcommand{\cftchapterpagefont}{}
+% \renewcommand*{\cftchapterformatpnum}[1]{~\textbullet~#1}
+
+%\renewcommand*{\cftsectionformatpnum}[1]{~\textbullet~#1}
+%\renewcommand*{\cftsubsectionformatpnum}[1]{~\textbullet~#1}
+%\renewcommand{\cftchapterafterpnum}{\cftparfillskip}
+%\renewcommand{\cftsectionafterpnum}{\cftparfillskip}
+%\renewcommand{\cftsubsectionafterpnum}{\cftparfillskip}
+% \setrmarg{3.55em plus 1fil}
+
+% don't use section numbering in TOC
+%\setsecnumdepth{subsection}
+%\maxsecnumdepth{subsection}
+
+%only use chapters in TOC
+\settocdepth{chapter}
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{}
+
+% USE TIKZ FOR DOT CONVERSION
+%(not using this as I converted dot SVG's to PDF)
+%\usepackage{tikz}
+%\usetikzlibrary{snakes,arrows,shapes}
+%\usepackage{amsmath}
+%\usepackage{lscape}
+
+% BETTER REFERENCES
+% `on the next page,' etc.
+\usepackage{varioref}
+
+% LINK PROPERTIES
+%-----------------
+\usepackage{hyperref} % Improves typography
+\hypersetup{
+    colorlinks=true,
+    linkcolor={gray!50!black},
+    citecolor={gray!50!black},
+    urlcolor={gray!80!black},
+    linktoc=all,
+    pdfcenterwindow=true
+}
+
+\begin{document}
+% COVER
+%------
+%clear the page
+\aliaspagestyle{chapter}{empty}
+
+% create a `fake' chapter for title page
+\chapter*{}
+
+%define a 'textblock' for the cover image & place image inside cover
+\begin{textblock*}{70.9mm}(0mm,0mm)
+\includegraphics[width=\paperwidth]{./media/images/cover.png}
+\end{textblock*}
+\newpage
+\tableofcontents*
+\newpage
+\chapter{Interactive Fiction \\ \small{A Lifetime Of Learning}}
+\input{./article_one.tex}
+
+\chapter*{}
+\begin{textblock*}{70.9mm}(0mm,0mm)
+\includegraphics[width=\paperwidth]{./media/images/bridging_the_gap.png}
+\end{textblock*}
+\chapter{Bridging The Gap \\ \small{Techniques For Crafting Your World Model}}
+\input{./article_two.tex}
+
+\chapter*{}
+\begin{textblock*}{70.9mm}(0mm,0mm)
+\includegraphics[width=\paperwidth]{./media/images/planning_if.png}
+\end{textblock*}
+
+\chapter{Sketching Your Reality \\ \small{Tips For Authoring}}
+\input{./article_four.tex}
+
+\chapter*{}
+\begin{textblock*}{70.9mm}(0mm,0mm)
+\includegraphics[width=\paperwidth]{./media/images/epilogue}
+\end{textblock*}
+
+\chapter{Epilogue\\ \small{Where We Go From Here}}
+\label{ch:epilogue}
+\input{./article_three.tex}
+
+%\chapter*{}
+%\begin{textblock*}{70.9mm}(0mm,0mm)
+%\includegraphics[width=\paperwidth]{./media/images/engaged}
+%\end{textblock*}
+%\chapter{IF In The Real World \\ \small{GPS-Enabled Adventures for Exploration}}
+%\label{chap:real_world}
+%\input{./article_three.tex}
+
+
+% Going to Canon beach to take pictures
+% - Getting back after dark
+
+% bored waiting me to take picture of valley farm
+
+
+\end{document}

@@ -1,0 +1,17 @@
+\begin{figure*}[h]                                                           
+ \includegraphics[width=\linewidth]{./media/images/engaged}%
+  \small{\textsc{\\ Imagine your content} knowing you tackled mind and matter to complete the Quest (Photo:
+    \href{http:portfolio.cooper.stevenson.name}{\textsc{D. Cooper Stevenson).}}}
+  \label{fig:engaged}%                                                 
+\end{figure*}                                                                
+\begin{quotation} 
+\noindent\color{Sepia}{\scriptsize{\textit{\textbf{“Ease of navigation is important in both physical and virtual space.” }}}}\\[2mm]
+   \hfill\color{Sepia}{\scriptsize{\textendash John Quelch}}
+\end{quotation} 
+
+\section{Real World Experience}
+This chapter presents the idea of using Interactive Fiction in the real world
+using a GPS enabled device. A working implementation is included.
+
+\href{http://portfolio.cooper.stevenson.name/tarlatt/tarlatt_slough_trail_feature_demo.mp4}{Here
+  is a walkthrough} exploring a trail along Willapa Bay in Long Beach, WA.

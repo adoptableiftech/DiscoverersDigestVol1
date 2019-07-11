@@ -1,0 +1,27 @@
+\changetocdepth {0}
+\contentsline {chapter}{\chapternumberline {1}Interactive Fiction \\ \relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {A Lifetime Of Learning}}{3}{chapter.1}
+\contentsline {section}{\numberline {}the passion never dies}{4}{section.1.1}
+\contentsline {subsection}{active participation}{5}{section*.2}
+\contentsline {subsection}{experience is everything}{5}{section*.3}
+\contentsline {chapter}{\chapternumberline {2}Bridging The Gap \\ \relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Techniques For Crafting Your World Model}}{8}{chapter.2}
+\contentsline {section}{\numberline {}museums for the mind}{9}{section.2.1}
+\contentsline {subsection}{together we stand}{9}{section*.5}
+\contentsline {section}{\numberline {}three layers of interaction}{10}{section.2.2}
+\contentsline {subsection}{reference layer}{10}{section*.6}
+\contentsline {subsection}{world view layer}{11}{section*.7}
+\contentsline {subsection}{story layer}{12}{section*.8}
+\contentsline {subsubsection}{all work and no play}{15}{section*.9}
+\contentsline {subsection}{narration, morgan freeman style}{16}{section*.10}
+\contentsline {section}{\numberline {}tying loose ends}{17}{section.2.3}
+\contentsline {chapter}{\chapternumberline {3}Sketching Your Reality \\ \relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Tips For Authoring}}{19}{chapter.3}
+\contentsline {section}{\numberline {}physical world layer}{20}{section.3.1}
+\contentsline {subsection}{composing the scene}{21}{section*.12}
+\contentsline {section}{\numberline {}a picture worth a thousand words}{22}{section.3.2}
+\contentsline {subsection}{blender}{23}{section*.13}
+\contentsline {subsection}{flight simulator}{23}{section*.14}
+\contentsline {subsection}{space simulators}{24}{section*.15}
+\contentsline {section}{\numberline {}plotting the story layers}{25}{section.3.3}
+\contentsline {chapter}{\chapternumberline {4}Epilogue\\ \relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Where We Go From Here}}{28}{chapter.4}
+\contentsline {section}{\numberline {}updates and expansion}{29}{section.4.1}
+\contentsline {subsection}{upcoming issue}{29}{section*.17}
+\contentsline {subsection}{``adieu'' \& additions}{29}{section*.18}

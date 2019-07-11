@@ -1,0 +1,97 @@
+digraph justice {
+  ranksep=.75; size = "7.5,7.5"; aspect=1;
+  {
+    // node [style=tapered, arrowhead=none, shape=plaintext, fontsize=16];
+    node [shape=plaintext, fontsize=16];
+    /* justice graph */
+    Justice -> "wide sense of" -> "as honesty" -> "helping friends harming enemies" -> "cannot mean doing harm" -> "intrest of the stronger" -> "recognizes absolute strength"
+             -> "popular view of origin of" -> "perfect type of" -> "recommended for consequences" -> "represented as irksome"
+             -> "as virtue of state" -> "in legal sense" -> "as virtue of individual" -> "an internal condition" 
+             -> "pays better than injustice" -> "external rewards of" -> "rewarded after death";
+  /* characters */
+    "Socrates"; "Cephalis"; "Polemarchus"; "Thrasymachus"; "Narrator";
+  }
+
+  // node [style=tapered, arrowhead=none, shape=plaintext, fontsize=16];
+  node [shape=box];
+  { rank = same; "wide sense of"; soc_wide; ceph_wide; narr_wide; ceph_soc_wide; soc_pole_wide; pole_wide; }
+  { rank = same; "as honesty"; "soc_honesty"; ceph_honesty; pole_honesty; }
+  { rank = same; "helping friends harming enemies"; soc_help_friends; pole_help_friends; pole_help_friends_2; pole_mistake_friends_enemies; soc_mistake_friends_enemies; narr_help_friends; }
+  { rank = same; "cannot mean doing harm"; soc_no_harm; pole_no_harm; narr_no_harm;}
+  { rank = same; "intrest of the stronger"; soc_thras_crit; strong_make_mistake; thras_soc_crit; thras_int_stronger; thras_perfect_stronger; narr_intrest_of_stronger; narr_perfect_stronger; soc_tend_weak;}
+
+  "Socrates" -> soc_wide [label = "soc_wide"];
+  "Socrates" -> soc_help_friends [label = "soc_helping_friends"];
+  "Socrates" -> soc_pole_wide;
+    pole_wide -> soc_pole_wide [label = "soc_pole_wide", style="dotted"];
+  "Socrates" -> "soc_honesty" ;
+    soc_wide -> ceph_soc_wide [label = "soc_wide", style="dotted"];
+  "Socrates" -> soc_mistake_friends_enemies;
+    soc_mistake_friends_enemies -> pole_mistake_friends_enemies [label = "soc_mistake_friends_enemies", style="dotted"];
+  "Socrates" -> soc_no_harm;
+    soc_no_harm -> pole_no_harm [label = "soc_no_harm", style="dotted"];
+  "Socrates" -> soc_thras_crit;
+    soc_thras_crit -> thras_soc_crit [label = "Always just questioning", style="dotted"];
+  "Socrates" -> strong_make_mistake;
+    strong_make_mistake -> thras_int_stronger [label = "Rulers make mistakes?", style="dotted"];
+    strong_make_mistake -> narr_perfect_stronger [label = "Rulers make mistakes?", style="dotted"];
+  "Socrates" -> soc_tend_weak
+
+  "Cephalis" -> ceph_wide [label = "ceph_wide"];
+  "Cephalis" -> ceph_soc_wide;
+  "Cephalis" -> ceph_honesty;
+
+  "Polemarchus" -> pole_wide;
+  "Polemarchus" -> pole_honesty;
+  "Polemarchus" -> pole_help_friends;
+  "Polemarchus" -> pole_mistake_friends_enemies;
+  pole_help_friends -> pole_help_friends_2;
+    pole_help_friends_2 -> soc_help_friends [label = "polemarchus_help_friends", style="dotted"];
+  "Polemarchus" -> pole_no_harm;
+
+  "Thrasymachus" -> thras_soc_crit;
+  "Thrasymachus" -> thras_int_stronger;
+    thras_int_stronger -> thras_perfect_stronger;
+
+  "Narrator" -> narr_wide;
+  "Narrator" -> narr_help_friends;
+  "Narrator" -> narr_no_harm;
+  "Narrator" -> narr_intrest_of_stronger;
+  "Narrator" -> narr_perfect_stronger;
+    
+  //Socrates
+  soc_wide [label = "Socrates Wide pg. 7: \lCan define as truth & paying back?\lnot so sure"]
+  soc_honesty [label  = "Must be more than honesty,\lask Polemarchus"]
+  soc_help_friends [label = "Sorates Expert vs. Just Man, pg. 10: \lHeard Polemarchus, \lJust man useful only when active?"]
+  soc_mistake_friends_enemies [label = "Pg 12: If mistake, alright to \lhelp rogue & injure good man?"]
+  soc_no_harm [label = "No Harm Pg. 14: Harming man makes \lhim less just; if just man is good then \lharming cannot be business \lof just man."]
+  soc_thras_crit [label = "Believe us in Earnest Pg. 16: \lThrasymachus, give us answer to \lmeaning of justice."]
+  strong_make_mistake [label = "Pg. 19: Can not rulers make mistakes?"]
+  soc_tend_weak [label = "pg. 22: Purpose of strong? \lDo they not practice to \l tend to those weaker?"]
+
+  //Cephalis
+  ceph_wide [label = "pg. 6: Wronged noone\l debt repaid"]
+    ceph_soc_wide [label = "pg. 7: Left converstation\l to Polemarchus."]
+  ceph_honesty [label = "tell the truth."]
+
+  //Polemarchus
+  soc_pole_wide [label = "pg. 7, Polemarchus and I conversed \lafter his father left."]
+  pole_wide [label = "pg. 9, Simonides: \lJustice to render man his due."]
+  pole_honesty [label = "Agree with Father: \lhonesty"]
+  pole_help_friends [label="pg. 9, Giving what is owed: \lwhat if man went mad?"]
+  pole_help_friends_2 [label= "pg. 9, Justice more than giving due. \lmore than use during idleness \ljust man then expert thief."]
+  pole_mistake_friends_enemies [label = "Pg. 12: Mistake good man for rogue?"]
+  pole_no_harm [label = "No Harm Pg. 14: Must be due to despot \lrich,thought can do whatever \l he likes"]
+
+  //Thrasymachus
+  thras_soc_crit [label="pg. 15: Easier to ask than \l answer yourself."]
+  thras_int_stronger [label ="Pg. 18: Justice is in the interest \lof the stronger. \llaws made by elite"]
+  thras_perfect_stronger [label =" pg. 20: Yes, the strnonger \lwhen they are perfect."]
+
+  //Narrator
+  narr_wide [label = "This is the narrator's take on wide justice."]
+  narr_help_friends [label = "Argument more serious, pg. 12: \l{You/he} thinks maxim morality \lnever doubted Socrates's denial \l changes that."]
+  narr_no_harm [label = "Pg. 14: Soc. Oppossed popular \lnotion of Justice"]
+  narr_intrest_of_stronger [label = "Pg. 15: Thrasymachus violent protest: \lMight is right."]
+  narr_perfect_stronger [label = "pg. 21: Thrasymachus has already \lshifted ground"]
+}

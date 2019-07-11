@@ -1,0 +1,13 @@
+# Fdb version 3
+["pdflatex"] 1535904350 "article_four.tex" "article_four.pdf" "article_four" 1535904350
+  "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1521748537 3332 103109f5612ad95229751940c61aada0 ""
+  "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm" 1521748660 11868 4f81e9b6033c032bdaf9884f4d7ef412 ""
+  "/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd" 1521749212 1880 bae7b659316f7344a86218ad38b01d91 ""
+  "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1521749239 33344 88ab9a5bd52990cec8912a3cf750de77 ""
+  "/usr/local/texlive/2018/texmf-var/web2c/xetex/xelatex.fmt" 1521750355 3705419 628b2229b70a3ccec9250dce440bb99a ""
+  "/usr/local/texlive/2018/texmf.cnf" 1521750323 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
+  "article_four.aux" 1535647753 8 a94a2480d3289e625eea47cd1b285758 ""
+  "article_four.tex" 1535904349 15945 1fb958ca2f3ab10f5bd04f9acf3bda8d ""
+  (generated)
+  "article_four.pdf"
+  "article_four.log"
